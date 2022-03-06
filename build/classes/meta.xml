@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<action url="/" class="com.koc.webapp.actions.GetTodoListAction" method="execute">
+		<result type="success" payload-key="todos">/WEB-INF/Index.jsp</result>
+		<result type="error">/WEB-INF/Error.jsp</result>
+	</action>
+	<action url="/add" class="com.koc.webapp.actions.AddTodoAction" method="execute">
+		<result type="success" payload-key="message">/WEB-INF/AddTodo.jsp</result>
+		<result type="error">/WEB-INF/Error.jsp</result>
+	</action>
+	<action url="/edit" class="com.koc.webapp.actions.EditTodoAction" method="execute">
+		<result type="success" payload-key="todo">/WEB-INF/EditTodo.jsp</result>
+		<result type="error">/WEB-INF/Error.jsp</result>
+	</action>
+	<action url="/update" class="com.koc.webapp.actions.EditTodoAction" method="execute">
+		<result type="success" payload-key="message">/WEB-INF/Success.jsp</result>
+		<result type="error">/WEB-INF/Error.jsp</result>
+	</action>
+	<action url="/delete" class="com.koc.webapp.actions.DeleteTodoAction" method="execute">
+		<result type="success" payload-key="message">/WEB-INF/Success.jsp</result>
+		<result type="error">/WEB-INF/Error.jsp</result>
+	</action>
+</actions>
